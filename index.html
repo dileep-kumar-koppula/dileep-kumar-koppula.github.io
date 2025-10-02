@@ -103,6 +103,28 @@
       color: #ddd;
     }
 
+    .project-card {
+  background: var(--light-glass);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  padding: 1.5rem;
+  border-radius: 15px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: left;
+  display: block;      /* make <a> behave like a block */
+  color: #fff;         /* text color */
+  text-decoration: none; /* remove underline */
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.project-card h3 {
+  margin-bottom: 0.5rem;
+}
+
     @media (max-width: 600px) {
       h1 {
         font-size: 2rem;
@@ -124,26 +146,30 @@
   </section>
 
   <section class="projects">
-    <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <a href="https://dileep-kumar-koppula.github.io/project1" target="_blank">🔗 Web Security Monitoring & Defense</a>
-        <p>A short description about this project goes here.</p>
-      </div>
-      <div class="project-card">
-        <a href="https://dileep-kumar-koppula.github.io/project2" target="_blank">🔗 Web Recon Tool</a>
-        <p>View Source Code: <a href="https://github.com/dileep-kumar-koppula/Projects.Cyber-Security.Information-Gathering-Tool" target="_blank">GitHub Repo</a></p>
-      </div>
-      <div class="project-card">
-        <a href="https://dileep-kumar-koppula.github.io/project3" target="_blank">🔗 USB-HID Automation & Testing</a>
-        <p>View Source Code: <a href="https://github.com/dileep-kumar-koppula?tab=repositories&q=projects+iot+usb&type=&language=&sort=" target="_blank">GitHub Repo</a></p>
-      </div>
-      <div class="project-card">
-        <a href="https://dileep-kumar-koppula.github.io/project4" target="_blank">🔗 Smart IoT Switch Board</a>
-        <p>View Demo: <a href="https://www.youtube.com/watch?v=EJPpPD0aEGw" target="_blank">YouTube</a></p>
-      </div>
-    </div>
-  </section>
+  <h2>Projects</h2>
+  <div class="project-grid">
+    <a class="project-card" href="https://github.com/dileep-kumar-koppula/Projects.Cyber-Security.Information-Gathering-Tool" target="_blank">
+      <h3>🔗 Web Security Monitoring & Defense</h3>
+      <p>A short description about this project goes here.</p>
+    </a>
+
+    <a class="project-card" href="https://github.com/dileep-kumar-koppula/Projects.Cyber-Security.Information-Gathering-Tool" target="_blank">
+      <h3>🔗 Web Recon Tool</h3>
+      <p>View Source Code on GitHub</p>
+    </a>
+
+    <a class="project-card" href="https://github.com/dileep-kumar-koppula?tab=repositories&q=projects+iot+usb&type=&language=&sort=" target="_blank">
+      <h3>🔗 USB-HID Automation & Testing</h3>
+      <p>View Source Code on GitHub</p>
+    </a>
+
+    <a class="project-card" href="https://www.youtube.com/watch?v=EJPpPD0aEGw" target="_blank">
+      <h3>🔗 Smart IoT Switch Board</h3>
+      <p>View Demo on YouTube</p>
+    </a>
+  </div>
+</section>
+
 
   <footer>© 2025 Koppula Dileep Kumar — Portfolio</footer>
 
